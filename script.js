@@ -170,23 +170,3 @@ class Iter {
     return collected;
   }
 }
-
-const items = [1, 2, 8];
-const iterator1 = new Iter(items);
-const iterator2 = new Iter(items);
-
-iterator1.next();
-iterator1.prev();
-iterator1.map((val) => val + 1);
-
-iterator2
-  .map((val) => val + 1)
-  .tap((val) => console.log("tapping1", val))
-  .map((val) => val + 2)
-  .tap((val) => console.log("tapping2", val));
-
-const collected1 = iterator1.collect();
-const collected2 = iterator2.collect();
-
-console.log("Collected 1:", collected1);
-console.log("Collected 2:", collected2);
