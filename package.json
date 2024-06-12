@@ -1,0 +1,12 @@
+{
+  "name": "sezadnjic",
+  "version": "1.0.0",
+  "main": "src/iter.js",
+  "scripts": {
+    "test": "node --test src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
